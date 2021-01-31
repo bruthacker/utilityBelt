@@ -44,7 +44,7 @@ def client_sender(buffer):
             print(response.decode('utf-8'), end=' ')
 
             #wait for more input
-            buffer = raw_input("")
+            buffer = input("")
             buffer += "\n"
 
             #send it off
