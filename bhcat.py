@@ -174,7 +174,7 @@ def main():
 
     #read the commandline options
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "hle:t:p:cu:"
+        opts, args = getopt.getopt(sys.argv[1:], "hle:t:p:cu:",
                                    ["help", "listen", "execute", "target",
                                    "port", "command", "upload"])
         for o,a in opts:
