@@ -129,7 +129,7 @@ def client_handler(client_socket):
             client_socket.send("<bhcat:#> ".encode('utf-8'))
             #now we receive until we see a linefeed (enter key)
             cmd_buffer = b''
-            while "\n" not in cmd_buffer:
+            while b"\n" not in cmd_buffer:
                 cmd_buffer += client_socket.recv(1024)
             #send back the command output
             response = run_command(cmd_buffer)
