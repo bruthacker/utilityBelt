@@ -31,7 +31,7 @@ def client_sender(buffer):
         while True:
             #now wait for data back
             recv_len = 1
-            response = ""
+            response = b''
 
             while recv_len:
                 data = client.recv(4096)
